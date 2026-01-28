@@ -61,9 +61,9 @@ class ReadersWritersMonitor {
 }
 
 class Reader implements Runnable {
-    private ReadersWritersMonitor monitor;
-    private String name;
-    private Random rand = new Random();
+    private final ReadersWritersMonitor monitor;
+    private final String name;
+    private final Random rand = new Random();
 
     public Reader(ReadersWritersMonitor monitor, String name) {
         this.monitor = monitor;
@@ -88,9 +88,9 @@ class Reader implements Runnable {
 }
 
 class Writer implements Runnable {
-    private ReadersWritersMonitor monitor;
-    private String name;
-    private Random rand = new Random();
+    private final ReadersWritersMonitor monitor;
+    private final String name;
+    private final Random rand = new Random();
 
     public Writer(ReadersWritersMonitor monitor, String name) {
         this.monitor = monitor;

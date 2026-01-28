@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int choice = -1;
+        try (Scanner scanner = new Scanner(System.in)) {
+            int choice = -1;
 
-        while (choice != 0) {
+            while (choice != 0) {
             System.out.println("\nOS Concurrency Simulation Menu");
             System.out.println("1. Run Producer–Consumer Simulation");
             System.out.println("2. Run Dining Philosophers Simulation");
@@ -41,8 +41,7 @@ public class Main {
                     System.out.println("Invalid option. Please try again.");
             }
         }
-
-        scanner.close();
+        }
     }
 }
 
