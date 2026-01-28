@@ -10,9 +10,9 @@ public class Main {
 
             while (choice != 0) {
             System.out.println("\nOS Concurrency Simulation Menu");
-            System.out.println("1. Run Producer–Consumer Simulation");
+            System.out.println("1. Run Producer-Consumer Simulation");
             System.out.println("2. Run Dining Philosophers Simulation");
-            System.out.println("3. Run Readers–Writers Simulation");
+            System.out.println("3. Run Readers-Writers Simulation");
             System.out.println("0. Exit");
             System.out.print("Enter your choice: ");
 
@@ -25,13 +25,13 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    System.out.println("\n Producer–Consumer Simulation is not implemented yet.");
+                    System.out.println("\n Producer-Consumer Simulation is not implemented yet.");
                     break;
                 case 2:
                     System.out.println("\nDining Philosophers Simulation is not implemented yet.");
                     break;
                 case 3:
-                    System.out.println("\nRunning Readers–Writers Simulation");
+                    System.out.println("\nRunning Readers-Writers Simulation");
                     ReadersWriters.run(); // implemented module
                     break;
                 case 0:
