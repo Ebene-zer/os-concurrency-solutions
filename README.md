@@ -1,7 +1,9 @@
-#  Concurrency Problem Solutions
+# Concurrency Problem Solutions
+
 **Operating Systems Course Project – Group 6**
 
-##  Project Overview
+## Project Overview
+
 This project is a **concurrency and synchronization simulator** developed as part of the Operating Systems course.  
 It demonstrates how operating systems manage **multiple concurrent threads**, **shared resources**, and **synchronization** using classic concurrency problems.
 
@@ -10,6 +12,7 @@ The system provides **deadlock-free solutions** to well-known synchronization pr
 ---
 
 ## Objectives
+
 The main objectives of this project are to:
 
 - Understand and apply **concurrency concepts**
@@ -21,7 +24,8 @@ The main objectives of this project are to:
 
 ---
 
-##  Key Concepts Covered
+## Key Concepts Covered
+
 - Processes vs Threads
 - Concurrency and Parallelism
 - Critical Sections
@@ -35,20 +39,23 @@ The main objectives of this project are to:
 
 ---
 
-##  Problems Implemented
+## Problems Implemented
 
 ### 1️. Producer–Consumer Problem
+
 - Synchronization between producer and consumer threads
 - Shared bounded buffer
 - Prevents buffer overflow and underflow
 - Uses **mutex locks** and **condition variables**
 
 ### 2️. Dining Philosophers Problem
+
 - Philosophers competing for shared forks
 - Demonstrates deadlock scenarios and deadlock-free solutions
 - Uses **semaphores** and resource ordering
 
 ### 3️. Readers–Writers Problem
+
 - Manages concurrent access to shared data
 - Multiple readers or one writer at a time
 - Demonstrates fairness and priority control
@@ -56,44 +63,52 @@ The main objectives of this project are to:
 
 ---
 
-##  System Architecture
+## System Architecture
 
 ```
-OSConcurrency/
+os-concurrency-solutions/
 │
-├── Main.java
-│   └── Application entry point and menu controller
-│
-├── ProducerConsumer.java
-│   └── Producer–Consumer problem implementation
-│
-├── DiningPhilosophers.java
-│   └── Dining Philosophers problem implementation
-│
-├── ReadersWriters.java
-│   └── Readers–Writers problem implementation
-│
-├── PerformanceMetrics.java
-│   └── Execution time and performance measurement
-│
-└── README.md
+├── pom.xml
+├── README.md
+├── LICENSE
+├── src/
+   ├── main/
+   │   └── java/
+   │       └── com/
+   │           └── concurrency/
+   │               ├── Main.java
+   │               ├── ProducerConsumer.java
+   │               ├── DiningPhilosophers.java
+   │               ├── ReadersWriters.java
+   │               └── PerformanceMetrics.java
+   └── test/
+       └── java/
+           └── com/
+               └── concurrency/
+                   ├── ProducerConsumerTest.java
+                   ├── DiningPhilosophersTest.java
+                   ├── ReadersWritersTest.java
+                   └── ToDevs.java
 ```
 
 ---
 
-##  Technologies Used
+## Technologies Used
+
 - **Language:** Java
 - **Concurrency Tools:**
-    - `Thread`
-    - `Runnable`
-    - `synchronized`
-    - `Semaphore`
-    - `Lock`
-    - `Condition`
+  - `Thread`
+  - `Runnable`
+  - `synchronized`
+  - `Semaphore`
+  - `Lock`
+  - `Condition`
 - **Platform:** Console-based
+
 ---
 
-##  Program Flow
+## Program Flow
+
 ```
 1. Run Producer–Consumer Simulation
 2. Run Dining Philosophers Simulation
@@ -103,14 +118,17 @@ OSConcurrency/
 
 ---
 
-##  Visualization & Output
+## Visualization & Output
+
 Console-based logs show:
+
 - Thread actions
 - Resource usage
 - Waiting and signaling
 - Execution states
 
 Example:
+
 ```
 Producer-1 produced item
 Consumer-2 consumed item
@@ -119,12 +137,14 @@ Buffer size: 3
 
 ---
 
-##  Performance Measurement
+## Performance Measurement
+
 - Execution time
 - Waiting time
 - Throughput
 
 Measured using:
+
 ```java
 System.nanoTime()
 ```
@@ -133,18 +153,17 @@ System.nanoTime()
 
 ## Team Roles & Contributions
 
-| Developer | Responsibility |
-|--|---------------|
-| Akelisiyine Desmond Nsoh Brew | Producer–Consumer |
-| Austin Bediako Tsibuah | Dining Philosophers |
-| Ebenezer Fuachie | Readers–Writers |
-| Jessy Kankam Yeboah | Integration & Performance |
-
-
+| Developer                     | Responsibility            |
+| ----------------------------- | ------------------------- |
+| Akelisiyine Desmond Nsoh Brew | Producer–Consumer         |
+| Austin Bediako Tsibuah        | Dining Philosophers       |
+| Ebenezer Fuachie              | Readers–Writers           |
+| Jessy Kankam Yeboah           | Integration & Performance |
 
 ---
 
-##  Testing Strategy
+## Testing Strategy
+
 - Independent module testing
 - Multiple-thread simulations
 - Edge case validation
@@ -152,15 +171,14 @@ System.nanoTime()
 
 ---
 
-##  Documentation
+## Documentation
+
 - Well-commented source code
 - This README
 - 10-page technical report
 
 ---
 
+## Conclusion
 
-
-
-##  Conclusion
 This project demonstrates practical understanding of **Operating Systems concurrency concepts** through clean, deadlock-free implementations and structured performance evaluation.
