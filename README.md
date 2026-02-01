@@ -67,28 +67,28 @@ The main objectives of this project are to:
 
 ```
 os-concurrency-solutions/
-│
 ├── pom.xml
 ├── README.md
 ├── LICENSE
 ├── src/
-   ├── main/
-   │   └── java/
-   │       └── com/
-   │           └── concurrency/
-   │               ├── Main.java
-   │               ├── ProducerConsumer.java
-   │               ├── DiningPhilosophers.java
-   │               ├── ReadersWriters.java
-   │               └── PerformanceMetrics.java
-   └── test/
-       └── java/
-           └── com/
-               └── concurrency/
-                   ├── ProducerConsumerTest.java
-                   ├── DiningPhilosophersTest.java
-                   ├── ReadersWritersTest.java
-                   └── ToDevs.java
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           └── concurrency/
+│   │               ├── Main.java
+│   │               ├── ProducerConsumer.java
+│   │               ├── DiningPhilosophers.java
+│   │               ├── ReadersWriters.java
+│   │               └── PerformanceMetrics.java
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── concurrency/
+│                   ├── ProducerConsumerTest.java
+│                   ├── DiningPhilosophersTest.java
+│                   ├── ReadersWritersTest.java
+│                   └── ToDevs.java
+
 ```
 
 ---
